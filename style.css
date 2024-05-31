@@ -1,0 +1,432 @@
+/* Font Style  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --theme-color: #0181EF;
+}
+
+/* Header Area  */
+header {
+    height: 15vh;
+    width: 100%;
+}
+
+header nav {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo-area img {
+    width: 100%;
+}
+
+header nav .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: .8vw;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2vw;
+    padding: 8px 8px 13px 8px;
+
+}
+
+header nav ul a.active {
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+}
+
+header nav ul a:hover {
+    color: var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+}
+
+header nav .languages {
+    border: 2px solid var(--theme-color);
+    padding: 8px 16px 10px 16px;
+}
+
+header nav .languages label {
+    color: var(--theme-color);
+    font-size: 1.2vw;
+}
+
+header nav .languages .lang {
+    border: none;
+    color: var(--theme-color);
+    outline: none;
+    font-weight: 400;
+    font-size: 1vw;
+    margin: 0 .2rem;
+}
+
+.first-order {
+    padding: 8px 16px 10px 16px;
+    background: linear-gradient(270deg, #0181EF 0%, #00BCF9 98.34%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.first-order:hover {
+    cursor: pointer;
+}
+
+
+.first-order span {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+/* Section One  */
+main {
+    width: 100%;
+    height: auto;
+}
+
+main #sec-one {
+    height: 80vh;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #sec-one .left {
+    width: 50%;
+}
+
+main #sec-one .left h2 {
+    font-size: 4.5vw;
+    font-weight: 500;
+}
+
+main #sec-one .left p {
+    font-size: 1.3vw;
+    font-weight: 500;
+    line-height: 2vw;
+    margin: 2vw 0;
+    width: 90%;
+}
+
+main #sec-one .left p span {
+    font-weight: 600;
+}
+
+main #sec-one .left .buttons {
+    display: flex;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+
+main #sec-one .left .contact {
+    outline: none;
+    padding: 8px 20px 10px 16px;
+    border: 2px solid var(--theme-color);
+    font-size: 1.2vw;
+    color: var(--theme-color);
+    font-weight: 500;
+}
+
+main #sec-one .left .contact:hover {
+    background: linear-gradient(270deg, #0181EF 0%, #00BCF9 98.34%);
+    cursor: pointer;
+    color: white;
+}
+
+main #sec-one .right {
+    width: 50%;
+}
+
+main #sec-one .right #carouselExampleIndicators .carousel-indicators {
+    bottom: -1.5vw;
+    left: 2vw;
+}
+
+main #sec-one .right #carouselExampleIndicators .carousel-indicators button {
+    background-color: var(--theme-color);
+}
+
+main #sec-one .right #carouselExampleIndicators .carousel-inner .carousel-item {
+    width: 100%;
+    margin-top: 3vw;
+}
+
+main #sec-one .right #carouselExampleIndicators .carousel-control-prev {
+    left: -55px;
+}
+
+main #sec-one .right #carouselExampleIndicators .carousel-control-next {
+    right: -85px;
+}
+
+
+/* Section Two  */
+main #sec-two {
+    min-height: auto;
+    width: 100%;
+    background: linear-gradient(270deg, #0181EF 0%, #00BCF9 98.34%);
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2.3vw;
+    font-weight: 500;
+    padding: 2vw 0;
+}
+
+main #sec-two .faqs {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2vw;
+}
+
+main #sec-two .faqs .faq {
+    width: 70%;
+    margin: 1vw auto;
+}
+
+main #sec-two .faqs .faq .question {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+main #sec-two .faqs .faq .question button {
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+main #sec-two .faqs .faq .question button i {
+    margin-right: .5rem;
+    font-size: 1.2vw;
+}
+
+main #sec-two .faqs .faq .collapse .card.card-body {
+    border-radius: 0;
+    background: #F8F8F8;
+    font-size: 1.2vw;
+    /* padding: 1vw 3vw; */
+}
+
+/* Section Three  */
+#sec-three .title {
+    color: var(--theme-color);
+}
+
+#sec-three #box {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#sec-three #box h4 {
+    font-size: 1.4vw;
+}
+
+#sec-three #box h4 i {
+    color: gray;
+    font-size: 1.4vw;
+    margin-bottom: .7vw;
+}
+
+#sec-three #box .note {
+    width: 70%;
+    font-size: 1.2vw;
+    line-height: 1.7vw;
+    color: #9B9B9B;
+}
+
+#sec-three #box .terms {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#sec-three #box .terms .term {
+    margin: .2vw 0;
+    width: 25%;
+}
+
+
+#sec-three #box .terms .term p {
+    font-size: 1.2vw;
+    line-height: 1.6vw;
+    border-left: 2px solid #00BCF9;
+    padding: .5vw;
+}
+
+#sec-three #box .terms.one .term.one,
+#sec-three #box .terms.one .term.two {
+    width: 50%;
+}
+
+#sec-three #box .terms.two .term {
+    width: 15%
+}
+
+/* Section Four  */
+#sec-four {
+    background: linear-gradient(270deg, #0181EF 0%, #00BCF9 98.34%);
+    height: auto;
+}
+
+.box {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box .left-side {
+    color: white;
+    width: 40%;
+}
+
+.box .left-side .info {
+    border-left: 2px solid whitesmoke;
+    padding: 0 .5vw;
+    margin: 1vw 0;
+}
+
+.box .left-side h4 {
+    font-weight: 500;
+    font-size: 1.7vw;
+}
+
+.box .left-side p {
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+
+.box .left-side button {
+    border: none;
+    outline: none;
+    outline: none;
+    padding: 8px 20px 10px 16px;
+    border: 2px solid white;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 500;
+    background-color: transparent;
+
+}
+
+.box .left-side button i {
+    margin-right: .5rem;
+}
+
+.box .right-side {
+    width: 60%;
+}
+
+.box .right-side img {
+    width: 100%;
+}
+
+.contact-two {
+    padding: 1vw 0;
+    background-color: white;
+    width: 100%;
+}
+
+.contact-two .box .left-side {
+    color: var(--theme-color);
+}
+
+.contact-two .box .left-side .info {
+    border-left: 2px solid var(--theme-color);
+}
+
+.contact-two .box .left-side button {
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
+}
+
+
+/* Footer Area  */
+footer {
+    background-color: black;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(202, 199, 199);
+    width: 85%;
+    margin: 0 auto;
+    padding: 2vw 0;
+}
+
+footer .container .left-part h3 {
+    font-size: 1.5vw;
+}
+
+footer .container .left-part ul li {
+    font-size: 1.3vw;
+}
+
+footer .container .left-part img {
+    margin-bottom: 2vw;
+}
+
+
+footer .right-part h3 {
+    font-size: 1.7vw;
+}
+
+footer .right-part p {
+    display: inline-block;
+    margin: .5vw 1vw;
+    font-size: 1.3vw;
+
+}
+
+footer .right-part p i {
+    margin-right: .5rem;
+    font-size: 1.3vw;
+}
